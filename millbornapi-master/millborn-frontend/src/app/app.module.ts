@@ -35,9 +35,12 @@ import { ClientApprovalComponent } from './components/client-approval/client-app
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { HeaderComponent } from './components/customer/header/header.component';
 import { HomeComponent } from './components/customer/home/home.component';
+import { LogInComponent } from './components/customer/login/login.component';
+import { CreateAccountComponent } from './components/customer/create-account/create-account.component';
 import { HomeCategoryListComponent } from './components/customer/home-category-list/home-category-list.component';
 import { HomeClientListComponent } from './components/customer/home-client-list/home-client-list.component';
 import { HomeProductListComponent } from './components/customer/home-product-list/home-product-list.component';
+import { HomeProductDetailsComponent } from './components/customer/home-product-details/home-product-details.component';
 import { BarContainerComponent } from './components/customer/bar-container/bar-container.component';
 import { FooterComponent } from './components/customer/footer/footer.component';
 import { ToggleDirective } from './directives/toggle.directive';
@@ -78,9 +81,12 @@ export function authHttpServiceFactory(http: Http, options: RequestOptions) {
     ProductListComponent,
     HeaderComponent,
     HomeComponent,
+    LogInComponent,
+    CreateAccountComponent,
     HomeCategoryListComponent,
     HomeClientListComponent,
     HomeProductListComponent,
+    HomeProductDetailsComponent,
     BarContainerComponent,
     FooterComponent,
     ToggleDirective,

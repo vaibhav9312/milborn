@@ -19,12 +19,15 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { HeaderComponent } from './components/customer/header/header.component';
 import { BarContainerComponent } from './components/customer/bar-container/bar-container.component';
 import { HomeComponent } from './components/customer/home/home.component';
+import { HomeProductDetailsComponent } from './components/customer/home-product-details/home-product-details.component';
+import { LogInComponent } from './components/customer/login/login.component'
+import { CreateAccountComponent } from './components/customer/create-account/create-account.component';
 import { CategoryListSubgroupComponent } from './components/customer/category-list-subgroup/category-list-subgroup.component';
 import { CategoryListCateComponent } from './components/customer/category-list-cate/category-list-cate.component';
 import { HomeCategoryListComponent } from './components/customer/home-category-list/home-category-list.component';
-import { SubgroupproductscomponentComponent } from './components/customer/subgroupproductscomponent/subgroupproductscomponent.component'
-import { HomeProductListComponent } from './components/customer/home-product-list/home-product-list.component'
-import { CategoryproductComponent } from './components/customer/categoryproduct/categoryproduct.component'
+import { SubgroupproductscomponentComponent } from './components/customer/subgroupproductscomponent/subgroupproductscomponent.component';
+import { HomeProductListComponent } from './components/customer/home-product-list/home-product-list.component';
+import { CategoryproductComponent } from './components/customer/categoryproduct/categoryproduct.component';
 
 
 import { SharedModule } from "./components/shared/shared.module";
@@ -36,14 +39,15 @@ const routes: Routes = [
   component:BarContainerComponent,
   children:[
     {path:'',redirectTo:'web',pathMatch:'full'},
-    {path:'web',
-    component: HomeComponent,
-  children:[
-    {path:'' ,component:HomeCategoryListComponent,outlet:'category'},
-    {path:'',component:HomeProductListComponent,outlet:'product'},
-
-{path:'cate/:id',component:CategoryListCateComponent,outlet:'category'}
-  ]
+    {path:'web',component: HomeComponent,
+    children:[
+        {path:'' ,component:HomeCategoryListComponent,outlet:'category'},
+        {path:'',component:HomeProductListComponent,outlet:'product'},
+        {path:'cate/:id',component:CategoryListCateComponent,outlet:'category'}
+    ]
+  },
+  {
+    path:'productDetail',component:HomeProductDetailsComponent
   },
   {
     path:'sub/:id',
@@ -69,7 +73,8 @@ children:[
     children: [
       { path: '', redirectTo: 'signin', pathMatch: 'full' },
       { path: 'signin', component: SigninComponent },
-
+      { path: 'login' , component :LogInComponent},
+      {path : 'signUp',component:CreateAccountComponent}
     ]
   },
   {
