@@ -49,6 +49,8 @@ import { CategoryListCateComponent } from './components/customer/category-list-c
 import { SubgroupproductscomponentComponent } from './components/customer/subgroupproductscomponent/subgroupproductscomponent.component';
 import { CategoryproductComponent } from './components/customer/categoryproduct/categoryproduct.component';
 import { HomeProfileComponent } from './components/customer/home-profile/home-profile.component';
+import { CustomerCartComponent } from './components/customer/customer-cart/customer-cart.component';
+import { CheckoutComponent } from './components/customer/checkout/checkout.component';
 
 
 
@@ -95,7 +97,9 @@ export function authHttpServiceFactory(http: Http, options: RequestOptions) {
     CategoryListCateComponent,
     SubgroupproductscomponentComponent,
     CategoryproductComponent,
-    HomeProfileComponent
+    HomeProfileComponent,
+    CustomerCartComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,

@@ -86,13 +86,11 @@
 
                                     <div class="cart clearfix animate-effect">
                                         <div class="action">
-
                                             <div class="add-cart-button btn-group">
                                                 <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
-										<i class="fa fa-shopping-cart"></i>													
-									</button>
-                                                <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
-
+										        <i class="fa fa-shopping-cart"></i>													
+				                                </button>
+                                                <button (click)="goToCart()" class="btn btn-primary cart-btn" type="button">Add to bucket</button>
                                             </div>
 
                                         </div>
@@ -164,7 +162,7 @@
                                                 <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
 										<i class="fa fa-shopping-cart"></i>													
 									</button>
-                                                <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+                                                <button (click)="goToCart()" class="btn btn-primary cart-btn" type="button">Add to cart</button>
 
                                             </div>
 
@@ -237,7 +235,7 @@
                                                 <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
 										<i class="fa fa-shopping-cart"></i>													
 									</button>
-                                                <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+                                                <button (click)="goToCart()" class="btn btn-primary cart-btn" type="button">Add to cart</button>
 
                                             </div>
 
@@ -543,7 +541,7 @@
                                         </div>
 
                                         <div class="col-sm-7">
-                                            <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart inner-right-vs"></i> ADD TO CART</a>
+                                            <a href="#" [routerLink]="['/home/productCart']" class="btn btn-primary"><i class="fa fa-shopping-cart inner-right-vs"></i> ADD TO CART</a>
                                         </div>
 
 
@@ -792,7 +790,7 @@
                                                     <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
 								<i class="fa fa-shopping-cart"></i>													
 							</button>
-                                                    <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+                                                    <button (click)="goToCart()" class="btn btn-primary cart-btn" type="button">Add to cart</button>
 
                                                 </li>
 
@@ -857,7 +855,7 @@
                                                     <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
 								<i class="fa fa-shopping-cart"></i>													
 							</button>
-                                                    <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+                                                    <button (click)="goToCart()" class="btn btn-primary cart-btn" type="button">Add to cart</button>
 
                                                 </li>
 
@@ -922,7 +920,7 @@
                                                     <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
 								<i class="fa fa-shopping-cart"></i>													
 							</button>
-                                                    <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+                                                    <button (click)="goToCart()" class="btn btn-primary cart-btn" type="button">Add to cart</button>
 
                                                 </li>
 
@@ -987,7 +985,7 @@
                                                     <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
 								<i class="fa fa-shopping-cart"></i>													
 							</button>
-                                                    <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+                                                    <button (click)="goToCart()" class="btn btn-primary cart-btn" type="button">Add to cart</button>
 
                                                 </li>
 
@@ -1052,7 +1050,7 @@
                                                     <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
 								<i class="fa fa-shopping-cart"></i>													
 							</button>
-                                                    <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+                                                    <button (click)="goToCart()" class="btn btn-primary cart-btn" type="button">Add to cart</button>
 
                                                 </li>
 
@@ -1117,7 +1115,7 @@
                                                     <button class="btn btn-primary icon" data-toggle="dropdown" type="button">
 								<i class="fa fa-shopping-cart"></i>													
 							</button>
-                                                    <button class="btn btn-primary cart-btn" type="button">Add to cart</button>
+                                                    <button (click)="goToCart()" class="btn btn-primary cart-btn" type="button">Add to cart</button>
 
                                                 </li>
 
@@ -1162,7 +1160,7 @@
                 <div id="brand-slider" class="owl-carousel brand-slider custom-carousel owl-theme">
                     <div class="item m-t-15">
                         <a href="#" class="image">
-                            <img data-echo="assets/frontweb/images/brands/brand1.png" src="assets/frontweb/images/blank.gif" alt="">
+                            <img data-echo="assets/frontweb/images/brands/brand1.png" src="assets/frontweb/images/brands/brand1.png" alt="">
                         </a>
                     </div>
                     <!--/.item-->

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router }                 from '@angular/router';
 
 @Component({
   selector: 'home-product-details',
@@ -8,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeProductDetailsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
 
+  goToCart(){
+    console.log("clicked");
+    this.router.navigate(['/home/productCart']);
+  }
 }

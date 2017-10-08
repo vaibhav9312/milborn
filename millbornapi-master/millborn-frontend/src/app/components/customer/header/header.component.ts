@@ -24,6 +24,8 @@ export class HeaderComponent implements OnInit {
 data:any[];
 rim:any[];
 showme:boolean;
+mouseover:boolean=false; 
+
   constructor(public _homeServices : HomepageService) { }
 
   ngOnInit() {
@@ -71,5 +73,15 @@ showme:boolean;
    });
   
  }
+
+  onMouseOver() {
+    this.mouseover = true;
+    console.log("mouseOver",this.mouseover);
+  }
+
+  onMouseOut() {
+    this.mouseover = false;
+    console.log("mouseOut",this.mouseover);
+  }
 
 }

@@ -20,6 +20,7 @@ import { HeaderComponent } from './components/customer/header/header.component';
 import { BarContainerComponent } from './components/customer/bar-container/bar-container.component';
 import { HomeComponent } from './components/customer/home/home.component';
 import { HomeProductDetailsComponent } from './components/customer/home-product-details/home-product-details.component';
+import { CustomerCartComponent } from './components/customer/customer-cart/customer-cart.component';
 import { LogInComponent } from './components/customer/login/login.component'
 import { CreateAccountComponent } from './components/customer/create-account/create-account.component';
 import { CategoryListSubgroupComponent } from './components/customer/category-list-subgroup/category-list-subgroup.component';
@@ -29,7 +30,7 @@ import { SubgroupproductscomponentComponent } from './components/customer/subgro
 import { HomeProductListComponent } from './components/customer/home-product-list/home-product-list.component';
 import { HomeProfileComponent } from './components/customer/home-profile/home-profile.component';
 import { CategoryproductComponent } from './components/customer/categoryproduct/categoryproduct.component';
-
+import { CheckoutComponent } from './components/customer/checkout/checkout.component';
 
 import { SharedModule } from "./components/shared/shared.module";
 
@@ -53,6 +54,8 @@ const routes: Routes = [
   {
     path:'profile',component:HomeProfileComponent
   },
+  {path:'productCart',component:CustomerCartComponent},
+  {path:'checkout' ,component:CheckoutComponent},
   {
     path:'sub/:id',
     component:HomeComponent,
