@@ -1,0 +1,116 @@
+.main{
+    overflow: hidden;
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.block-content{
+border: 1px solid #e1e1e1;
+width: 225px;
+background-color: #fff;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-o-border-radius: 5px;
+z-index: 2;
+}
+
+.block-content li {
+    padding-left: 10px;
+    border-bottom: 1px solid #e1e1e1;
+    height: 47px;
+    line-height: 45px;
+    font-family: webfontregular;
+    color: #4e4e4e;
+    font-size: 17px;
+}
+
+/*@media screen and (min-width: 1025px)
+.block-content li {
+    font-family: 'SourceSansPro-Regular', sans-serif;
+    font-size: 14px;
+}*/
+
+.my-account {
+    overflow: hidden;
+    font-family: webfontregular;
+    padding: 8px;
+}
+
+.my-account-main {
+    border: 1px solid #e1e1e1;
+    float: right;
+    margin-top: 10px;
+    overflow: hidden;
+    width: 850px;
+    font-family: webfontregular;
+}
+
+.my-account .icon-menu-open, #order-history-div .icon-menu-open{
+    /*background-image: url(../../images/header/oldicon_menu.png);*/
+    background-origin: padding-box;
+    background-position: -23px 50%!important;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    background-color: #fafafa;
+    height: 35px;
+    width: 37px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: none;
+    margin: 9px 10px 0 0;
+    float: left;
+}
+
+.my-account .icon-menu-open, #order-history-div .icon-menu-open {
+    display: block;
+}
+
+.block-my-account .block-content {
+    width: 250px!important;
+}
+
+.my-account #reward-history .order-table .order-detail .oname{ font-size: 22px;}
+#order-history-div .order-table .order-number .order-tym {
+       text-align: left;
+
+}
+
+.order-table {
+    border: 1px solid #e1e1e1;
+    overflow: hidden;
+    width: 94%;
+    background-color: #fff;
+    padding: 1.5% 3%;
+    text-align: left;
+    float: right;
+    font-weight: 600;
+    font-size: 100%;
+}
+
+.order-detail {
+    border-bottom: 0px;
+    height: 75px;
+    width: 100%;
+    background-color: #fafafa;
+    padding: 12px 25px;
+}
+
+.order-detail {
+    background-color: #fafafa;
+    border-bottom: 1px solid #ededed;
+    height: 75px;
+    padding: 12px;
+    width: 100%;
+}
+
+#gender { height: 44px;
+    margin-right: 10px!important;
+    margin-left: 1px!important;
+    border: 1px solid #e1e1e1;
+    color: #333;
+    float: left;
+    margin: 10px;
+    padding: 12px;
+    width: 12%; }
+

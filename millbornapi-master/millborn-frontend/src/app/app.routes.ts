@@ -27,6 +27,7 @@ import { CategoryListCateComponent } from './components/customer/category-list-c
 import { HomeCategoryListComponent } from './components/customer/home-category-list/home-category-list.component';
 import { SubgroupproductscomponentComponent } from './components/customer/subgroupproductscomponent/subgroupproductscomponent.component';
 import { HomeProductListComponent } from './components/customer/home-product-list/home-product-list.component';
+import { HomeProfileComponent } from './components/customer/home-profile/home-profile.component';
 import { CategoryproductComponent } from './components/customer/categoryproduct/categoryproduct.component';
 
 
@@ -48,6 +49,9 @@ const routes: Routes = [
   },
   {
     path:'productDetail',component:HomeProductDetailsComponent
+  },
+  {
+    path:'profile',component:HomeProfileComponent
   },
   {
     path:'sub/:id',
