@@ -1,0 +1,128 @@
+<div class="my-account order-table" id="my_account">
+  <div>
+      <h1 class="order-detail">Account Detail</h1>
+      <br>
+      <form [formGroup]="clientreg">
+        <div class="row">
+            <div class="col-lg-6">
+                <h4 class="basic-info">Basic Information</h4>
+                <div class="card panel">
+                    <div class="card-block">
+                        <div class="row">
+                            <div class="col-sm-5 profile-title"> Client Type </div>
+                            <div class="col-sm-7"> Dummay Name </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-sm-5 profile-title"> Firm Name </div>
+                                <div class="col-sm-7"> Dummy First Name </div>
+                        </div>
+                        
+                        <div class="row">
+                                <div class="col-sm-5 profile-title"> Owner Name </div>
+                                <div class="col-sm-7"> Dummy Owner Name </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-sm-5 profile-title"> Mobile Number</div>
+                                <div class="col-sm-7"> 123456 <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                </div>
+                        </div>
+                        
+                        <div class="row">
+                                <div class="col-sm-5 profile-title"> Alternate Number</div>
+                                <div class="col-sm-7"> 123456 <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                </div>
+                        </div>
+    
+                       
+                        <div class="row">
+                                <div class="col-sm-5 profile-title"> GST Number</div>
+                                <div class="col-sm-7"> Dummy GST Number </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-sm-5 profile-title"> Email Address</div>
+                                <div class="col-sm-7"> Dummy Email Address </div>
+                        </div>
+                       
+                        <div for="gstnumber" [hidden]="!GSTNumber">
+                            <div class="form-group">
+                                <label for="GSTName">Name</label>
+                                "Dummy GST Name"
+                            </div>
+    
+                            <div class="form-group">
+                                <label for="GSTAddress">Address</label>
+                                "Dummy GST Address"
+                            </div>
+                        </div>
+                        <div class="form-group" [hidden]="(mainItemsList.length == 0)">
+                            <label for="">Main Items Dealing With</label>
+                            <select class="form-control error" multiple="multiple" size="5" formControlName="MainItems">
+                                <option *ngFor="let mi of mainItemsList" [ngValue]="mi.MainItemsId">{{mi.MainItemName}}</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="othermainitems">Other Main Items</label>
+                            <input type="text" class="form-control" formControlName="OtherMainItem" />
+                        </div>
+    
+                        <div class="block"></div>
+                        <button class="btn btn-primary" type="submit" [disabled]="!clientreg.valid">Submit</button>
+                        <label [hidden]="clientreg.valid" style="color:red"> Please fill the highlighted fields </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h4 class="basic-info">Address Information</h4>
+                <div class="card panel">
+                    <div class="card-block">
+                            <div class="row">
+                                    <div class="col-sm-5 profile-title"> Country </div>
+                                    <div class="col-sm-7"> Country Name </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-5 profile-title"> State </div>
+                                <div class="col-sm-7"> State Name </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-sm-5 profile-title"> City </div>
+                                    <div class="col-sm-7"> City Name </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-sm-5 profile-title"> District </div>
+                                    <div class="col-sm-7"> District Name </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-sm-5 profile-title"> Plot Number </div>
+                                    <div class="col-sm-7"> Plot Number </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-sm-5 profile-title"> Street Name </div>
+                                    <div class="col-sm-7"> Street Name </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-sm-5 profile-title"> Area </div>
+                                    <div class="col-sm-7"> Area Name </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-sm-5 profile-title"> Pincode </div>
+                                    <div class="col-sm-7"> Pincode </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-sm-5 profile-title"> LandMark </div>
+                                    <div class="col-sm-7"> LandMark Name </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+    </form>
+  </div>
+ 
+</div>
+
+
+
+
+

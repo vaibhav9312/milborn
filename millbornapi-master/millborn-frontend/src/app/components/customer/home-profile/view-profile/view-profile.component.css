@@ -1,0 +1,27 @@
+.order-detail {
+    border-bottom: 0px;
+    height: 75px;
+    width: 100%;
+    background-color: #fafafa;
+    padding: 12px 25px;
+}
+
+.order-detail {
+    background-color: #fafafa;
+    border-bottom: 1px solid #ededed;
+    height: 75px;
+    padding: 12px;
+    width: 100%;
+}
+
+.basic-info{
+    font-style: oblique;
+    text-align:center;
+}
+
+.profile-title{
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}

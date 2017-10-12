@@ -114,3 +114,7 @@ z-index: 2;
     padding: 12px;
     width: 12%; }
 
+.custom-font{
+    font-style: oblique;
+}
+

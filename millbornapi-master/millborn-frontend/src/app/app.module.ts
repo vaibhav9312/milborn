@@ -52,6 +52,8 @@ import { HomeProfileComponent } from './components/customer/home-profile/home-pr
 import { CustomerCartComponent } from './components/customer/customer-cart/customer-cart.component';
 import { CheckoutComponent } from './components/customer/checkout/checkout.component';
 import { ResetPasswordComponent } from './components/customer/login/reset-password/reset-password.component';
+import { EditProfileComponent } from './components/customer/home-profile/edit-profile/edit-profile.component';
+import { ViewProfileComponent } from './components/customer/home-profile/view-profile/view-profile.component';
 
 
 
@@ -101,7 +103,9 @@ export function authHttpServiceFactory(http: Http, options: RequestOptions) {
     HomeProfileComponent,
     CustomerCartComponent,
     CheckoutComponent,
-    ResetPasswordComponent
+    ResetPasswordComponent,
+    EditProfileComponent,
+    ViewProfileComponent
   ],
   imports: [
     BrowserModule,
