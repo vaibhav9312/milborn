@@ -33,6 +33,7 @@ import { CategoryproductComponent } from './components/customer/categoryproduct/
 import { CheckoutComponent } from './components/customer/checkout/checkout.component';
 
 import { SharedModule } from "./components/shared/shared.module";
+import { ResetPasswordComponent } from './components/customer/login/reset-password/reset-password.component';
 
 
 const routes: Routes = [
@@ -81,7 +82,8 @@ children:[
       { path: '', redirectTo: 'signin', pathMatch: 'full' },
       { path: 'signin', component: SigninComponent },
       { path: 'login' , component :LogInComponent},
-      {path : 'signUp',component:CreateAccountComponent}
+      {path : 'signUp',component:CreateAccountComponent},
+      {path : 'reset',component : ResetPasswordComponent}
     ]
   },
   {
